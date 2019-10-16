@@ -1,0 +1,139 @@
+.about{
+    margin-top: 2rem;
+    text-align: center;
+    border: solid #76f1d3;
+    width: 80%;
+    background-color: #45fcce;
+    padding: 20px;
+    box-shadow: 7px 5px  rgb(223, 226, 226);
+}
+
+.about p{
+    margin:30px;
+}
+
+.cetificate{
+    text-align: center;
+    margin: 0 auto;
+    border: solid #76f1d3;
+    box-shadow: 7px 5px  rgb(223, 226, 226);
+    width: 80%;
+    margin-top: 2rem;
+    background-color: #45fcce;
+    animation: 2s fadeIn;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    
+
+}
+
+.card{
+    display: flex;
+    justify-content: row wrap;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    animation: 3s fadeIn;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes fadeIn {
+    10% {
+        opacity:0.1;
+    }
+    20%{
+        opacity:0.2
+    }
+    30%{
+        opacity:0.3
+    }
+    40% {
+        opacity:0.4;
+    }
+    50% {
+        opacity:0.5;
+    }
+    60% {
+        opacity:0.6;
+    }
+    70% {
+        opacity:0.7;
+    }
+    80% {
+        opacity:0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.line{
+    margin: 0 auto;
+    border: 3px solid salmon;
+    width: 100px;
+}
+.line2{
+    margin: 0 auto;
+    border: 2px solid salmon;
+    width: 80px;
+}
+
+.button{
+
+    text-align: center;
+    margin-top: 3rem;
+    
+}
+.main-button{
+    background-color:#76f1d3;
+    border:none;
+    color: white;
+    padding:15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+.main-button:hover{
+    background-color:#1c6952;
+}
+@media only screen and (max-width:786px){
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+        cursor: pointer;
+        animation: 3s fadeIn;
+        animation-fill-mode: forwards;
+        opacity: 0;
+    }
+    @keyframes fadeIn {
+        10% {
+            opacity:0.1;
+        }
+        20%{
+            opacity:0.2
+        }
+        30%{
+            opacity:0.3
+        }
+        40% {
+            opacity:0.4;
+        }
+        50% {
+            opacity:0.5;
+        }
+        60% {
+            opacity:0.6;
+        }
+        70% {
+            opacity:0.7;
+        }
+        80% {
+            opacity:0.8;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}

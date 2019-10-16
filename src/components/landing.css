@@ -1,0 +1,423 @@
+.css-typing p {
+    border-right: .1em solid rgb(36, 35, 33);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3rem ;
+    white-space: nowrap;
+    overflow: hidden;
+    
+   
+   }
+  .css-typing p:nth-child(1) {
+    width: 10em;
+    padding: 1rem;
+    margin-top: 3rem;
+    text-align: center;
+    
+    overflow: hidden;
+    -webkit-animation: type 1s steps(40, end);
+    animation: type 2s steps(40, end);
+    -webkit-animation-delay: 2s;
+    animation-delay: 0s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  
+  .css-typing p:nth-child(2) {
+    width: 10.2em;
+    padding: 1rem;
+    text-align: center;
+    opacity: 0;
+    -webkit-animation: type2 2s steps(40, end);
+    animation: type2 4s steps(40, end);
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  
+  .css-typing p:nth-child(3) {
+    width: 13.7em;
+    padding: 1rem;
+    opacity: 0;
+    -webkit-animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
+    animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
+    -webkit-animation-delay: 8s;
+    animation-delay: 6s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  .ele {
+    
+    margin-left: 4rem;
+    width: 30px;
+    height: 30px;
+    font-family:impact, sans-serif;
+    color:rgb(5, 17, 29);
+    animation: 10s wil;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+    visibility: hidden;
+  }
+  .ele p {
+    font-size: 1.5rem
+  }
+  
+  .ele:hover {
+    color:  #22dbad
+  }
+  
+  @keyframes wil{
+    99% {
+      visibility: hidden;
+    }
+    100% {
+      visibility: visible;
+    }
+  }
+
+  .row{
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    margin-left: 8rem;
+  }
+  
+  .link {
+    
+    margin-left: 1rem;
+    width: 30px;
+    height: 30px;
+    font-family:impact, sans-serif;
+    color:rgb(5, 17, 29);
+    animation: 11s In;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+  }
+  
+  .link:hover {
+    color:  #22dbad
+  }
+  
+  @keyframes In{
+    90%{
+      visibility: hidden;
+    }
+   
+    100% {
+      visibility: visible;
+    }
+  }
+  @keyframes type {
+    0% {
+      width: 0;
+      padding: 1rem
+    }
+    99.9% {
+      border-right: .15em solid orange;
+    }
+    100% {
+      border: none;
+    }
+  }
+  
+  @-webkit-keyframes type {
+    0% {
+      width: 0;
+      padding: 1rem
+    }
+    99.9% {
+      border-right: .15em solid orange;
+    }
+    100% {
+      border: none;
+    }
+  }
+  
+  @keyframes type2 {
+    0% {
+      width: 0;
+      padding: 1rem;
+    }
+    1% {
+      opacity: 1;
+    }
+    99.9% {
+      border-right: .15em solid orange;
+    }
+    100% {
+      opacity: 1;
+      border: none;
+    }
+  }
+  
+  @-webkit-keyframes type2 {
+    0% {
+      width: 0;
+      padding: 1rem;
+    }
+    1% {
+      opacity: 1;
+    }
+    99.9% {
+      border-right: .15em solid orange;
+    }
+    100% {
+      opacity: 1;
+      border: none;
+    }
+  }
+  
+  @keyframes type3 {
+    0% {
+      width: 0;
+      padding: 1rem;
+    }
+    1% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes type3 {
+    0% {
+      width: 0;
+      padding: 1rem;
+    }
+    1% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  @-webkit-keyframes blink {
+    50% {
+      border-color: tranparent;
+    }
+  }
+  .section {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  .section h4 {
+    font-size: 2rem;
+    letter-spacing: var(--mainSpacing);
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+  }
+  .section div {
+    width: 5rem;
+    height: 5px;
+    margin: 0 auto;
+    background: var(--primaryColor);
+  }
+
+  @media only screen and (max-width:786px){
+    .css-typing p {
+        border-right: 1px solid rgb(36, 35, 33);
+        font-family:   'Arial Narrow Bold',impact;
+        font-size: 20px ;
+        white-space: nowrap;
+        overflow: hidden;
+        
+         }
+      .css-typing p:nth-child(1) {
+        padding: 2px;
+        text-align: center;
+        -webkit-animation: type 2s steps(40, end);
+        animation: type 2s steps(40, end);
+        -webkit-animation-delay: 2s;
+        animation-delay: 0s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+      }
+      
+      .css-typing p:nth-child(2) {
+        width: 15rem;
+        padding: 2px;
+        text-align: center;
+        opacity: 0;
+        -webkit-animation: type2 2s steps(40, end);
+        animation: type2 4s steps(40, end);
+        -webkit-animation-delay: 2s;
+        animation-delay: 2s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+      }
+      
+      .css-typing p:nth-child(3) {
+        width: 20rem;
+        padding: 2px;
+        text-align: center;
+        opacity: 0;
+        -webkit-animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
+        animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
+        -webkit-animation-delay: 8s;
+        animation-delay: 6s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+      }
+      .ele {
+    
+        margin-left: 2rem;
+        width: 30px;
+        height: 30px;
+        font-family:impact, sans-serif;
+        color:rgb(5, 17, 29);
+        animation: 10s de;
+        animation-fill-mode: forwards;
+        cursor: pointer;
+        visibility: hidden;
+      }
+      .ele p {
+        font-size: 1rem
+      }
+      .ele:hover {
+        color: #413802;
+      }
+      
+      @keyframes de{
+        99% {
+          visibility: hidden;
+        }
+        100% {
+          visibility: visible;
+        }
+      }
+      .row{
+        display: flex;
+        justify-content: flex-start;
+        flex-flow: row wrap;
+        margin-left: 4rem;
+      }
+      
+      .link {
+        
+        margin-left: 1rem;
+        width: 20px;
+        height: 20px;
+        font-family:impact, sans-serif;
+        color:rgb(5, 17, 29);
+        animation: 10s eI;
+        animation-fill-mode: forwards;
+        visibility: hidden;
+      }
+      
+      .link:hover {
+        color: #413802;
+      }
+      
+      @keyframes eI{
+        99% {
+          visibility: hidden;
+        }
+        100% {
+          visibility: visible;
+        }
+      }
+      
+      @keyframes type {
+        0% {
+          width: 0;
+          
+        }
+        99.9% {
+          border-right: 1px solid black;
+        }
+        100% {
+          border: none;
+        }
+      }
+      
+      @-webkit-keyframes type {
+        0% {
+          width: 0;
+          
+        }
+        99.9% {
+          border-right: 1px solid black;
+        }
+        100% {
+          border: none;
+        }
+      }
+      
+      @keyframes type2 {
+        0% {
+          width: 0;
+          
+        }
+        1% {
+          opacity: 1;
+        }
+        99.9% {
+          border-right: 1px solid black;
+        }
+        100% {
+          opacity: 1;
+          border: none;
+        }
+      }
+      
+      @-webkit-keyframes type2 {
+        0% {
+          width: 0;
+          
+        }
+        1% {
+          opacity: 1;
+        }
+        99.9% {
+          border-right: 1px solid black;
+        }
+        100% {
+          opacity: 1;
+          border: none;
+        }
+      }
+      
+      @keyframes type3 {
+        0% {
+          width: 0;
+          
+        }
+        1% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      
+      @-webkit-keyframes type3 {
+        0% {
+          width: 0;
+          
+        }
+        1% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      
+      @keyframes blink {
+        50% {
+          border-color: transparent;
+        }
+      }
+      @-webkit-keyframes blink {
+        50% {
+          border-color: tranparent;
+        }
+      }
+  }
