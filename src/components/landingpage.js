@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import { Grid, Cell } from 'react-mdl';
 import "./landing.css"
 import {FaLinkedin}from "react-icons/fa"
 import {IoLogoGithub,IoLogoFacebook} from "react-icons/io"
@@ -11,6 +10,7 @@ class Landing extends Component {
   render() {
     return(
       <div className=" landing-grid">
+        <div className='backgroundss'></div>
       <div className="css-typing">
   <p>
     MY NAME IS WARISH

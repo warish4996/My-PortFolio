@@ -16,8 +16,11 @@ class App extends Component {
     return (
       <div>
     <Layout>
+    <div class="menuLine"></div>
+    <div class="menuLine1"></div>
+    <div class="menuLine2"></div>
         <Header class="header-color" title={<Link style={{textDecoration: 'none', color: 'white'}} to="/">MyPortfolio</Link>} scroll>
-           
+          
            <div class="none"> 
            <Navigation >
                 <Link to="/resume">Resume</Link>

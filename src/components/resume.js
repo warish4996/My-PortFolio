@@ -19,7 +19,7 @@ class Resume extends Component {
               <img 
                 src={Images}
                 alt="avatar"
-                style={{height: '200px'}}
+                style={{height: '200px',borderRadius: '50px'}}
                  />
             </div>
 
@@ -36,7 +36,7 @@ class Resume extends Component {
             <h5>Email</h5>
             <p>warishce@gmail.com</p>
             <h5>Skype</h5>
-            <p>8960749337</p>
+            <p>live:.cid.b22214bc1cbec307</p>
             <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
           </Cell>
           <Cell className="resume-right-col" col={8}>
@@ -64,7 +64,8 @@ class Resume extends Component {
               // startYear={2009}
               // endYear={2012}
               // jobName="First Job"
-              jobDescription="I have 6 month of self experience and I design some website like Resort Booking
+              jobDescription="I have 6 month of self experience and work as freelancer for 8 months where I work on E-cart website ,hotel managment website
+              and an company managment website. I also design some website by my self like Resort Booking
               ,Burger Builder and My portfolio and these websites perfectly working on every size of screen  using React,CSS,HTML,Bootstrap,etc.."/>
 
               {/* <Experience
@@ -76,25 +77,33 @@ class Resume extends Component {
               <hr style={{borderTop: '3px solid #e22947'}} />
               <h2>Skills</h2>
               <Skills
-                skill="javascript"
-                progress={75}
+                skill={`javascript${' '} `}
+                progress={65}
                 />
                 <Skills
-                  skill="HTML/CSS"
-                  progress={85}
+                  skill={`HTML/CSS${'   '}`} 
+                  progress={60}
                   />
                   <Skills
-                    skill="GIT"
+                    skill={`GIT${'        '}`}
                     progress={60}
                     />
-                    <Skills
-                      skill="React"
-                      progress={80}
-                      />
-                     <Skills
-                      skill="Bootstrap"
-                      progress={70}
-                      />
+                  <Skills
+                    skill={`React${'      '}`}
+                    progress={70}
+                    />
+                  <Skills
+                    skill={`React-hook${' '}`}
+                    progress={60}
+                    />
+                  <Skills
+                    skill="React-redux"
+                    progress={60}
+                    />
+                  <Skills
+                    skill={`Bootstrap${' '}`}
+                    progress={50}
+                    />
 
           </Cell>
          

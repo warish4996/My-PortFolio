@@ -3,13 +3,37 @@
   background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
- .button {
-  display: flex;
-  justify-content: center;
-
-  color:white;
-
+.material-icons {
+  color: transparent;
 } 
+
+.menuLine{
+  width: 15px;
+  height: 2px;
+  background-color: white;
+  margin: 6px 0;
+  position: absolute;
+  left: 35px;
+  top: 21px;
+}
+.menuLine1{
+  width: 15px;
+  height: 2px;
+  background-color: white;
+  margin: 6px 0;
+  position: absolute;
+  left: 35px;
+  top: 26px;
+}
+.menuLine2{
+  width: 15px;
+  height: 2px;
+  background-color: white;
+  margin: 6px 0;
+  position: absolute;
+  left: 35px;
+  top: 31px;
+}
 .landing-grid {
   /* background: #833ab4;  fallback for old browsers */
   background-image: url("./images/my.jpg");
@@ -51,17 +75,16 @@
     display: none;
   }
   .landing-grid {
-    background-image: url("./images/you.jpg");
+    background-image: url("./images/new.jpg");
     /* background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     text-align: center;
     position: fixed;
     left: 0;
-    top:3rem;
     width: 100% ;
     height: 100%;
     min-height: calc(100vh - 66px);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     object-fit:contain;   
   }
   .projects-grid {
@@ -73,6 +96,49 @@
     .project-cell{
       margin: 1rem
     }
+    .menuLine{
+      width: 15px;
+      height: 2px;
+      background-color: white;
+      margin: 6px 0;
+      position: absolute;
+      left: 25px;
+      top: 16px;
+    }
+    .menuLine1{
+      width: 15px;
+      height: 2px;
+      background-color: white;
+      margin: 6px 0;
+      position: absolute;
+      left: 25px;
+      top: 21px;
+    }
+    .menuLine2{
+      width: 15px;
+      height: 2px;
+      background-color: white;
+      margin: 6px 0;
+      position: absolute;
+      left: 25px;
+      top: 26px;
+    }
+
+    .mdl-card {
+      max-width: fit-content;
+      top: 180px;
+  }
+
+  .projects-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .Project{
+    min-height: 100%;
+  }  
+  
 }
 
 .projects-grid {
@@ -110,3 +176,5 @@
   align-items: center;
   margin-bottom: 2rem;
 }
+
+

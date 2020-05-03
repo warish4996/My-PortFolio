@@ -119,14 +119,14 @@ class Projects extends Component {
 
          {/* Project 2 */}
          <div className="projects"/>
-         <Card shadow={5} style={{ marginTop: '2rem',marginLeft:"2rem",marginRight:"2rem"}}>
+         <Card shadow={5} style={{ marginTop: '2rem',marginLeft:"2rem",marginRight:"2rem"}} className='mdl-card'>
            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://www.recipetineats.com/wp-content/uploads/2019/08/Avocado-Chicken-Burgers_9.jpg) center / cover'}} >Burger Builder</CardTitle>
            <CardText>
             This is Burger Builder website which can be use to place burger order as customer specification,Build on React,CSS,JSX,React-router,firebase,etc..
            </CardText>
            <CardActions border>
              <Button  colored><a href="https://github.com/warish4996/Burger-builder" style={{textDecoration:"none"}}>GitHub</a></Button>
-             <Button colored><a href="https://react-burger-347be.firebaseapp.com/" style={{textDecoration:"none"}}>Live Demo</a></Button>
+             {/* <Button colored><a href="https://react-burger-347be.firebaseapp.com/" style={{textDecoration:"none"}}>Live Demo</a></Button> */}
            </CardActions>
            <CardMenu style={{color: '#fff'}}>
            </CardMenu>
