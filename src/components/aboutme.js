@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Card, CardTitle, Button} from 'react-mdl';
 import './aboutme.css'
-import images from '../images/down.pdf'
+import images from '../images/dow.pdf'
 
 class About extends Component {
   render() {

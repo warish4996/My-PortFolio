@@ -5,7 +5,7 @@ import Experience from './experience';
 import Skills from './skills';
 import Images from '../images/hi.jpg'
 import './aboutme.css'
-import images from '../images/down.pdf'
+import images from '../images/dow.pdf'
 
 
 class Resume extends Component {
