@@ -11,8 +11,7 @@ class Contact extends Component {
       name:"",
       email:"",
       subject:"",
-      message:"",
-      
+      message:"",  
     },
     error:null
  }
@@ -24,21 +23,30 @@ class Contact extends Component {
      this.setState({error:errormsg})
      return alert("Please Fill all feilds")
    }
-
-   //const serviceID= "123457";
   const templateId = 'template_PJM3DA2Z';
-  
-
-	this.sendFeedback(templateId,{message_html: this.state.contact.message,from_name: this.state.contact.name,subject:this.state.contact.subject ,reply_to: this.state.contact.email})
+	this.sendFeedback( templateId,{message_html: this.state.contact.message,from_name: this.state.contact.name,subject:this.state.contact.subject ,reply_to: this.state.contact.email})
   }
 
   sendFeedback (templateId, variables) {
 	window.emailjs.send(
-  	'warishce@gmail.com', templateId,
-  	variables
+  	'warishce@gmail.com', templateId,variables
   	).then(res => {
-      let errormsg="Mail sent successfully"
-      this.setState({error:errormsg})
+      if(res.status === 200){
+        let msg="Mail sent successfully"
+        this.setState({error:msg},()=>{
+          let defaults={
+            name:"",
+            email:"",
+            subject:"",
+            message:"",  
+          }
+          setTimeout(() => this.setState({error:null,contact:defaults}), 3000)
+        })
+      }else{
+        let msg="Mail not sent "
+        this.setState({error:msg})
+      }
+
   	})
   	// Handle errors here however you like, or use a React error boundary
     .catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err))
