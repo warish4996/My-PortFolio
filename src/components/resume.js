@@ -2,10 +2,16 @@ import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
 import Education from './education';
 import Experience from './experience';
-import Skills from './skills';
 import Images from '../images/hi.jpg'
 import './aboutme.css'
-import images from '../images/dow.pdf'
+import images from '../images/down.pdf'
+import javascript from '../images/javascript.png'
+import htmlCss from '../images/html-css.jpg'
+import react from '../images/React.png'
+import redux from '../images/Redux.png'
+import materialUi from '../images/materialUi.png'
+import hooks from '../images/Hooks.png'
+import Git from '../images/Git.png'
 
 
 class Resume extends Component {
@@ -61,50 +67,48 @@ class Resume extends Component {
               <h2>Experience</h2>
 
             <Experience
-              // startYear={2009}
-              // endYear={2012}
-              // jobName="First Job"
-              jobDescription="I have 6 month of self experience and work as freelancer for 8 months where I work on E-cart website ,hotel managment website
-              and an company managment website. I also design some website by my self like Resort Booking
+              startYear={'JAN/2019'}
+              endYear={'May/2019'}
+              jobName="Self-employed"
+              jobDescription="I have 6 month of self experience. I also design some website by my self like Resort Booking
               ,Burger Builder and My portfolio and these websites perfectly working on every size of screen  using React,CSS,HTML,Bootstrap,etc.."/>
 
-              {/* <Experience
-                startYear={2012}
-                endYear={2016}
-                jobName="Second Job"
-                jobDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-                /> */}
+              <Experience
+                startYear={'JUNE/2019'}
+                endYear={'APRIL/2020'}
+                jobName="e-developers world"
+                jobDescription="I have also 11 months experience in e-developers world where I worked on E-cart website ,hotel managment website
+                and company managment website."
+                />
               <hr style={{borderTop: '3px solid #e22947'}} />
               <h2>Skills</h2>
-              <Skills
-                skill={`javascript${' '} `}
-                progress={65}
-                />
-                <Skills
-                  skill={`HTML/CSS${'   '}`} 
-                  progress={60}
-                  />
-                  <Skills
-                    skill={`GIT${'        '}`}
-                    progress={60}
-                    />
-                  <Skills
-                    skill={`React${'      '}`}
-                    progress={70}
-                    />
-                  <Skills
-                    skill={`React-hook${' '}`}
-                    progress={60}
-                    />
-                  <Skills
-                    skill="React-redux"
-                    progress={60}
-                    />
-                  <Skills
-                    skill={`Bootstrap${' '}`}
-                    progress={50}
-                    />
-
+              <Grid className="demo-grid-1">
+              <Cell col={4}>
+                <img style={{width:'150px'}} src={javascript} alt='javascript'/>
+              </Cell>
+              <Cell col={4}>
+              <img style={{width:'150px',height:'112.5px'}} src={htmlCss}/>
+              </Cell>
+              <Cell col={4}>
+              <img style={{width:'150px',height:'112.5px'}} src={react}/>
+              </Cell>
+              </Grid>
+              <Grid className="demo-grid-1">
+              <Cell col={4}>
+                <img style={{width:'150px',height:'112.5px'}} src={redux}/>
+              </Cell>
+              <Cell col={4}>
+              <img style={{width:'150px',height:'112.5px'}} src={hooks}/>
+              </Cell>
+              <Cell col={4}>
+              <img style={{width:'150px',height:'112.5px'}} src={materialUi}/>
+              </Cell>
+              </Grid>
+              <Grid className="demo-grid-1">
+              <Cell col={4}>
+                <img style={{width:'150px',height:'112.5px'}} src={Git}/>
+              </Cell>
+              </Grid>
           </Cell>
          
         </Grid>
