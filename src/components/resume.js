@@ -3,7 +3,7 @@ import { Grid, Cell } from 'react-mdl';
 import Education from './education';
 import Experience from './experience';
 import Images from '../images/hi.jpg'
-import './aboutme.css'
+import './aboutme/aboutme.css'
 import images from '../images/down.pdf'
 import javascript from '../images/javascript.png'
 import htmlCss from '../images/html-css.jpg'

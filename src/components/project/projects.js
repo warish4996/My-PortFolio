@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Card, CardTitle, CardText, CardActions, Button, CardMenu } from 'react-mdl';
-
+import './projects.css'
 
 class Projects extends Component {
   constructor(props) {
@@ -119,7 +119,7 @@ class Projects extends Component {
 
          {/* Project 2 */}
          <div className="projects"/>
-         <Card shadow={5} style={{ marginTop: '2rem',marginLeft:"2rem",marginRight:"2rem"}} className='mdl-card'>
+         <Card shadow={5} style={{ marginTop: '2rem',marginLeft:"2rem",marginRight:"2rem"}} className='mdl-card1'>
            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://www.recipetineats.com/wp-content/uploads/2019/08/Avocado-Chicken-Burgers_9.jpg) center / cover'}} >Burger Builder</CardTitle>
            <CardText>
             This is Burger Builder website which can be use to place burger order as customer specification,Build on React,CSS,JSX,React-router,firebase,etc..
@@ -133,7 +133,7 @@ class Projects extends Component {
          </Card>
 
          {/* Project 3 */}
-         <Card shadow={5} style={{marginTop: '2rem',marginLeft:"2rem",marginRight:"2rem"}}>
+         <Card shadow={5} style={{marginTop: '2rem',marginLeft:"2rem",marginRight:"2rem"}} className='mdl-card1'>
            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://www.beach.com/wp-content/uploads/2018/12/The-Royal-Play-del-Carmen_07-1170x600.jpg) center / cover'}} >Resort</CardTitle>
            <CardText>
              This Resort booking website where customer can book Resort according customer need,Build on React,CSS,JSX,React-router,etc..
@@ -145,10 +145,9 @@ class Projects extends Component {
            <CardMenu style={{color: '#fff'}}>
            </CardMenu>
          </Card>
+         </div>
          <div/>
        </div> 
-
-      </div>
     )
   }
 }

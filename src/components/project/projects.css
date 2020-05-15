@@ -1,0 +1,6 @@
+@media only screen and (max-width:768px){
+    .mdl-card1 {
+    max-width: fit-content;
+    top: 180px;
+}
+}

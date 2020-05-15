@@ -124,10 +124,6 @@
       top: 26px;
     }
 
-    .mdl-card {
-      max-width: fit-content;
-      top: 180px;
-  }
 
   .projects-grid {
     display: flex;
