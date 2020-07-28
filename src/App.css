@@ -58,6 +58,7 @@
   padding: 20px;
   box-shadow: 10px 5px  rgb(223, 226, 226);
   margin-top: 2rem
+  
 }
 .line2{
   margin: 0 auto;
@@ -133,7 +134,11 @@
   
   .Project{
     min-height: 100%;
+    
   }  
+  .ProjectHeding{
+    margin-bottom: 80px;
+  }
   
 }
 

@@ -85,39 +85,14 @@ class Projects extends Component {
   render() {
     return(
       <div className="Project">
-        <h2>PROJECT</h2>
+        <div className='ProjectHeding'>
+        <h2 >PROJECT</h2>
         <div className="line2"/>
-        {/* <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
-          <Tab>React</Tab>
-          <Tab>Angular</Tab>
-          <Tab>VueJS</Tab>
-          <Tab>MongoDB</Tab>
-        </Tabs>
-
-
-          <Grid>
-            <Cell col={12}>
-              <div className="content">{this.toggleCategories()}</div>
-            </Cell>
-          </Grid> */}
+        </div>
  <div className="projects-grid">
-           {/* Project 1 */}
-         {/* <Card shadow={5} style={{minWidth: '450', marginTop: '5rem'}}>
-           <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #1</CardTitle>
-           <CardText>
-             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-           </CardText>
-           <CardActions border>
-             <Button colored>GitHub</Button>
-             <Button colored>CodePen</Button>
-             <Button colored>Live Demo</Button>
-           </CardActions>
-           <CardMenu style={{color: '#fff'}}>
-             <IconButton name="share" />
-           </CardMenu>
-         </Card> */}
+        
 
-         {/* Project 2 */}
+         {/* Project 1 */}
          <div className="projects"/>
          <Card shadow={5} style={{ marginTop: '2rem',marginLeft:"2rem",marginRight:"2rem"}} className='mdl-card1'>
            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://www.recipetineats.com/wp-content/uploads/2019/08/Avocado-Chicken-Burgers_9.jpg) center / cover'}} >Burger Builder</CardTitle>
@@ -126,13 +101,13 @@ class Projects extends Component {
            </CardText>
            <CardActions border>
              <Button  colored><a href="https://github.com/warish4996/Burger-builder" style={{textDecoration:"none"}}>GitHub</a></Button>
-             {/* <Button colored><a href="https://react-burger-347be.firebaseapp.com/" style={{textDecoration:"none"}}>Live Demo</a></Button> */}
+             <Button colored><a href="https://burger-builder-applicati-418e8.web.app/" style={{textDecoration:"none"}}>Live Demo</a></Button>
            </CardActions>
            <CardMenu style={{color: '#fff'}}>
            </CardMenu>
          </Card>
 
-         {/* Project 3 */}
+         {/* Project 2 */}
          <Card shadow={5} style={{marginTop: '2rem',marginLeft:"2rem",marginRight:"2rem"}} className='mdl-card1'>
            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://www.beach.com/wp-content/uploads/2018/12/The-Royal-Play-del-Carmen_07-1170x600.jpg) center / cover'}} >Resort</CardTitle>
            <CardText>
@@ -141,6 +116,19 @@ class Projects extends Component {
            <CardActions border>
              <Button colored><a href="https://github.com/warish4996/react-beach-resort" style={{textDecoration:"none"}}>GitHub</a></Button>
              <Button colored><a href="https://react-beach-resort-yup.netlify.com/" style={{textDecoration:"none"}}>Live Demo</a></Button>
+           </CardActions>
+           <CardMenu style={{color: '#fff'}}>
+           </CardMenu>
+         </Card>
+          {/* Project 3 */}
+          <Card shadow={5} style={{marginTop: '2rem',marginLeft:"2rem",marginRight:"2rem"}} className='mdl-card1'>
+           <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://www.exinent.com/wp-content/uploads/2018/10/cart-integration.jpg) center / cover'}} >E-cart shopping</CardTitle>
+           <CardText>
+             This online shopping website where customer can buy stuff online,Build on React,CSS,JSX,React-router,hooks,Redux,React Bootstrap,etc..
+           </CardText>
+           <CardActions border>
+             <Button colored><a href="https://github.com/warish4996/e-cart" style={{textDecoration:"none"}}>GitHub</a></Button>
+             <Button colored><a href="https://e-cart-3a39e.web.app" style={{textDecoration:"none"}}>Live Demo</a></Button>
            </CardActions>
            <CardMenu style={{color: '#fff'}}>
            </CardMenu>
